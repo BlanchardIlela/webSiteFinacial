@@ -31,19 +31,20 @@
     <header 
     class="flex flex-col gap-y-12 px-4 py-8 sm:py-12 sm:px-8 lg:px-12 2xl:rounded-2xl
     2xl:my-8 2xl:border 2xl:border-blue">
-      <nav>
-        <div>
-          <a href="#">FNX</a>
+      <nav class="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center sm:justify-between sm:items-center
+       sm:*:gap-x-5 md:flex-row md:w-5/6 2xl:w-auto">
+        <div class="sm:flex-row">
+          <a class="py-2 text-2xl font-bold" href="#">FNX</a>
           <p>Individual</p>
           <p>Business</p>
         </div>
 
-        <div>
-          <a href="#"><i></i> <span>Location</span></a>
+        <div class="sm:flex-row-reverse sm:justify-end md:flex-row">
+          <a href="#"><i class="fa-solid fa-location-dot"></i> <span>Location</span></a>
 
-          <p>1-500-123-4567</p>
+          <p class="text-primary-500">1-500-123-4567</p>
 
-          <a href="#">Login</a>
+          <a class="border-2 border-primary-900 px-6 py-2 text-lg dark:border-white self-center" href="#">Login</a>
         </div>
       </nav>
 
