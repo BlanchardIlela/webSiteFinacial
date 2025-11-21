@@ -32,7 +32,7 @@
       class="flex flex-col gap-y-12 px-4 py-8 sm:py-20 sm:px-8 lg:px-12 2xl:rounded-2xl
       2xl:my-8 2xl:border 2xl:border-blue"
       >
-      <nav class="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center sm:justify-between sm:items-center
+      <nav class="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center sm:justify-between sm:*:items-center
        sm:*:gap-x-5 md:flex-row md:w-5/6 2xl:w-auto">
         <div class="sm:flex-row">
           <a class="py-2 text-2xl font-bold" href="#">FNX</a>
@@ -64,18 +64,25 @@
       </div>
 
       <!-- -------------------------- Showccase -->
-      <section>
-        <div>
-          <h1>The Future of Finance</h1>
-          <p>The best way to invest your money</p>
-          <a href="#"> Get Started </a>
+      <section class="grid items-center gap-y-8 md:grid-cols-2">
+        <div class="flex flex-col gap-y-5">
+          <h1 class="text-4xl font-bold md:text-6xl">The Future of Finance</h1>
+          <p class="text-lg">The best way to invest your money</p>
+          <a 
+            class="bg-green px-6 py-2 text-center text-lg text-white shadow-md shadow-green
+            sm:self-start" href="#"> 
+            Get Started 
+          </a>
         </div>
 
         <figure>
           <img src="images/showcase.svg" alt="" />
         </figure>
 
-        <img src="images/showcase-design.png" alt="" />
+        <img
+           class="absolute -z-10 h-96 w-32 hidden md:block dark:hidden" 
+           src="images/showcase-design.png" alt="" 
+           />
       </section>
     </header>
 
