@@ -29,8 +29,7 @@
   >
     <!-- -------------------------- Header -->
     <header 
-      class="flex flex-col gap-y-12 px-4 py-8 sm:py-20 sm:px-8 lg:px-12 2xl:rounded-2xl
-      2xl:my-8 2xl:border 2xl:border-blue"
+      class="component"
       >
       <nav class="flex flex-col gap-5 *:flex *:flex-col *:gap-y-2 *:text-center sm:justify-between sm:*:items-center
        sm:*:gap-x-5 md:flex-row md:w-5/6 2xl:w-auto">
@@ -88,58 +87,65 @@
 
     <main>
     <!-- -------------------------- About -->
-      <section>
+      <section class="component *:flex *:flex-col *:gap-y-5 md:*:gap-5">
         <div>
-          <h2>A New Take on Finance</h2>
-          <p>
+          <h2 class="text-2xl font-bold md:text-center">A New Take on Finance</h2>
+          <p class="md:w-2/4 md:mx-auto md:text-center dark:text-primary-600">
             We are a team of passionate people whose goal is to improve
             everyone's life through disruptive products. We build great products
             to solve your business problems.
           </p>
         </div>
 
-        <div>
-          <div>
-            <div>
-              <h3>More About Us</h3>
-              <p>Great for individuals and Businesses.</p>
-              <p>
+        <div class="md:flex-row-reverse md:*:basis-2/4">
+          <div class="flex flex-col gap-y-8 md:self-center">
+            <div class="flex flex-col gap-y-3">
+              <h3 class="text-xl font-semibold text-blue">More About Us</h3>
+              <p class="text-orange">Great for individuals and Businesses.</p>
+              <p class="dark:text-primary-600">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
                 perspiciatis mollitia ratione delectus vitae repellat, sequi aut
                 voluptatibus adipisci natus corporis maiores .
               </p>
             </div>
 
-            <div>
-              <div>
-                <figure>
+            <div class="flex flex-col gap-y-5 md:gap-y-10">
+              <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)]
+              md:gap-x-4">
+                <figure class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3">
                   <img src="images/tick.png" alt="" />
                 </figure>
-                <h4>Comprehensive Finance</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <h4 class="text-lg font-semibold text-orange
+                md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">Comprehensive Finance</h4>
+                <p class="dark:text-primary-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
 
-              <div>
-                <figure>
+              <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)]
+              md:gap-x-4">
+                <figure class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3">
                   <img src="images/tick.png" alt="" />
                 </figure>
-                <h4>Support is just a call away</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <h4 class="text-lg font-semibold text-orange
+                md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">Support is just a call away</h4>
+                <p class="dark:text-primary-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
 
-              <div>
-                <figure>
+              <div class="grid gap-y-2 md:grid-cols-[85px_1fr] md:grid-rows-[repeat(2,auto)]
+              md:gap-x-4">
+                <figure class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3">
                   <img src="images/tick.png" alt="" />
                 </figure>
-                <h4>Say goodbye to paperwork</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <h4 class="text-lg font-semibold text-orange
+                md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-2">Say goodbye to paperwork</h4>
+                <p class="dark:text-primary-600">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
           </div>
 
-          <figure>
-            <img src="images/about.svg" alt="" />
-            <img src="images/about-design.png" alt="" />
+          <figure class="relative">
+            <img class="md:[transform:rotateY(0.5turn)]" src="images/about.svg" alt="" />
+            <img class="absolute left-0 top-1/4 -z-10 hidden md:block
+            h-96 w-1/3 dark:hidden" src="images/about-design.png" alt="" />
           </figure>
         </div>
       </section>
